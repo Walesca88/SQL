@@ -1,0 +1,27 @@
+--Create clothing database table
+
+CREATE TABLE Bella_Rei (Id INTEGER PRIMARY KEY, "Item" TEXT, "Color" TEXT,"Quantity" INTEGER, "Price" INTEGER, "Bay" INTEGER);
+
+INSERT INTO Bella_Rei VALUES (1, "v neck t-shirt", "black", 20, 10.99, 5);
+INSERT INTO  Bella_Rei VALUES (2,"crew neck t-shirt", "red",15, 10.99, 6);
+INSERT INTO Bella_Rei VALUES (3, "v neck t-shirt", "white", 13, 10.99, 5);
+INSERT INTO Bella_Rei VALUES (4, "crew neck t-shirt", "black", 5, 10.99, 6);
+INSERT INTO Bella_Rei VALUES (5, "crew neck t-shirt","white", 14, 10.99, 6);
+INSERT INTO Bella_Rei VALUES (6, "v neck t-shirt", "red", 12, 10.99, 5);
+INSERT INTO Bella_Rei VALUES (7, "slim fit t-shirt", "red", 10, 12.99, 3);
+INSERT INTO Bella_Rei VALUES (8, "slim fit t-shirt", "black",3, 12.99, 3);
+INSERT INTO Bella_Rei VALUES (9, "slim fit t-shirt", "white", 8, 12.99, 3);
+INSERT INTO Bella_Rei VALUES (10, "polo shirt", "red", 5, 15.99, 2);
+INSERT INTO Bella_Rei VALUES (11, "polo shirt", "black", 3, 15.99, 2);
+INSERT INTO Bella_Rei VALUES (12, "polo shirt", "white", 8, 15.99, 2);
+INSERT INTO Bella_Rei VALUES (13, "button up shirt", "white", 5, 19.99, 1);
+INSERT INTO Bella_REi VALUES (14, "button up shirt", "black", 8, 19.99, 1);
+INSERT INTO Bella_Rei VALUES (15, "button up shirt", "red", 17, 19.99, 1);
+
+Display the database ordered by price.
+
+Select * From Bella_Rei 
+Order by Price;
+
+
+Select Item,SUM(Price) FROM Bella_Rei Group by Item;
